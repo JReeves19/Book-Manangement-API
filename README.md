@@ -8,11 +8,12 @@ This project implements a FastAPI server and a Python client to manage a collect
 3. Install dependencies: `pip install -r requirements.txt`
 
 ## Running the server
-```bash```
+```bash
 cd server
 python main.py
+```
 
-### Aditional Exercises/Features
+## Aditional Exercises/Features
 1. Search Books by Genre - This feature provides an endpoint for looking up books by genre. It also supports client-side command parsing.
 Endpoint: `/books/genre/{genre}`. For example, `/books/genre/Fiction` would return all fictional books.
 Client-side command: `python client.py search-genre "Fiction"` would return all fictional books.
@@ -23,6 +24,6 @@ Client-side command: `python client.py search-genre "Fiction"` would return all 
 Enpoint: `/books/{book_id}`
 Client-side command: `python client.py patch 1 --title "New Title"` would update the title of book with id 1 to "New Title."
 
-5. Book Count - This feature provides an endpoint for querying the total count of books. It also supports a client-side command for this purpose.
+4. Book Count - This feature provides an endpoint for querying the total count of books. It also supports a client-side command for this purpose.
 Endpoint: `books/count`. For example, `books/count` would return `{"count": 2}` if there are two books in the database or local memory.
 Client-side command: `python client.py count`. This command would return `{"count": 2}` if there are two books in the database or local memory.
